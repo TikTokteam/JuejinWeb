@@ -2,4 +2,4 @@
 
 ##目前的页面设计
 
-[目前页面](https://github.com/TikTokteam/JuejinWeb/blob/main/plan.png)
+![目前页面](https://github.com/TikTokteam/JuejinWeb/blob/main/plan.png)
