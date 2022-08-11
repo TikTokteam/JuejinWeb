@@ -1,26 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <leftSide>
+  </leftSide>
+  <SearchBar>
+  </SearchBar>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import leftSide from "@/components/head/leftSide";
+import SearchBar from "@/components/head/searchBar";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SearchBar,
+    leftSide
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
