@@ -1,24 +1,33 @@
 <template>
-  <leftSide>
-  </leftSide>
-  <SearchBar>
-  </SearchBar>
-
+<div class="head">
+  <head-part></head-part>
+</div>
+  <div class="read">
+    <reader-part></reader-part>
+  </div>
+  <div class="events">
+    <recent-event></recent-event>
+  </div>
 </template>
 
 <script>
-import leftSide from "@/components/head/leftSide";
-import SearchBar from "@/components/head/searchBar";
+
+import ReaderPart from "@/components/reader/readerPart";
+import RecentEvent from "@/components/eventPart/recentEvent";
+import headPart from "@/components/head/headPart";
 
 export default {
   name: 'App',
   components: {
-    SearchBar,
-    leftSide
+    headPart,
+    RecentEvent,
+    ReaderPart,
   }
 }
 </script>
 
 <style>
-
+head-part{
+  position: fixed;
+}
 </style>

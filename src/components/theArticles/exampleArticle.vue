@@ -1,16 +1,15 @@
 <template>
-<input type="text"/>
 
 </template>
 
 <script>
+
+
 export default {
-  name: "searchBar"
+  name: "exampleArticle"
 }
 </script>
 
 <style scoped>
-*{
-  width: 15em;
-}
+
 </style>

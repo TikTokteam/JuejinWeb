@@ -1,16 +1,13 @@
 <template>
-<input type="text"/>
-
+这里是阅读的部分
 </template>
 
 <script>
 export default {
-  name: "searchBar"
+  name: "readerPart"
 }
 </script>
 
 <style scoped>
-*{
-  width: 15em;
-}
+
 </style>

@@ -1,16 +1,13 @@
 <template>
-<input type="text"/>
-
+这边就是最近的活动
 </template>
 
 <script>
 export default {
-  name: "searchBar"
+  name: "recentEvent"
 }
 </script>
 
 <style scoped>
-*{
-  width: 15em;
-}
+
 </style>

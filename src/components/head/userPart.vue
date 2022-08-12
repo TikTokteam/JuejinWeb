@@ -1,16 +1,13 @@
 <template>
-<input type="text"/>
-
+用户
 </template>
 
 <script>
 export default {
-  name: "searchBar"
+  name: "userPart"
 }
 </script>
 
 <style scoped>
-*{
-  width: 15em;
-}
+
 </style>
