@@ -1,24 +1,5 @@
 # juejinweb
 
-## Project setup
-```
-npm install
-```
+##目前的页面设计
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![目前页面](https://github.com/TikTokteam/JuejinWeb/blob/main/plan.png)
