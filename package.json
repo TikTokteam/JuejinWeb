@@ -9,8 +9,10 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "element-plus": "^2.2.13",
     "vue": "^3.2.13",
-    "vue-markdown": "^2.2.4"
+    "vue-markdown": "^2.2.4",
+    "webpack": "^5.74.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
