@@ -4,7 +4,7 @@
       <div class="home flex_center">
         <div class="top_left flex_center">
           <div class="img">
-            <img src="../../assets/logo.svg" alt="Logo">
+            <a href=""><img src="../../assets/logo.svg" alt="Logo"></a>
           </div>
           <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
             <el-menu-item index="1">首页</el-menu-item>
@@ -40,6 +40,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   name: "headPart",

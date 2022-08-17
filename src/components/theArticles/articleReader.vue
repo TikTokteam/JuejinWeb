@@ -1,4 +1,5 @@
 <template>
+
  <v-md-preview :text ='mdContent'>
  </v-md-preview>
 </template>
@@ -16,4 +17,6 @@ export default {
 </script>
 
 <style scoped>
+.articleList
+
 </style>

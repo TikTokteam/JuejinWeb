@@ -1,13 +1,17 @@
 <template>
-<div class="head">
-  <head-part></head-part>
-</div>
-  <div class="read">
+  <el-header>
+    <head-part></head-part>
+  </el-header>
+
+  <el-main>
     <article-list></article-list>
-  </div>
-  <div class="events">
+  </el-main>
+
+  <el-aside>
     <recent-event></recent-event>
-  </div>
+  </el-aside>
+
+
   <div>
   </div>
 </template>

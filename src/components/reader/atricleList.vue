@@ -1,4 +1,5 @@
 <template>
+  <article-card></article-card>
   <div class="contents__list" ref="scrollBar">
     <div class="list__header" ></div>
     <div class="list__content">
@@ -10,8 +11,10 @@
 </template>
 
 <script>
+import ArticleCard from "@/components/theArticles/articleCard";
 export default {
   name: "articleList",
+  components: {ArticleCard},
   data() {
     return {
       articleInfoList: [],   //存放文章列表数据的数组
