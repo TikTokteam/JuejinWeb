@@ -1,11 +1,16 @@
 <template>
-这里是阅读的部分
+  <div class="markdown">
+    <Markdown/>
+  </div>
 </template>
 
 <script>
+
 export default {
-  name: "readerPart"
+  name: "mdEditor",
+
 }
+
 </script>
 
 <style scoped>

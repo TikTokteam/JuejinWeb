@@ -8,10 +8,11 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@kangc/v-md-editor": "^2.3.15",
     "core-js": "^3.8.3",
     "element-plus": "^2.2.13",
+    "prismjs": "^1.28.0",
     "vue": "^3.2.13",
-    "vue-markdown": "^2.2.4",
     "webpack": "^5.74.0"
   },
   "devDependencies": {
