@@ -20,8 +20,8 @@
         <div class="top_right">
           <ul class="flex_center">
             <li class="flex_center">
-              <el-input v-model="input" type="input" placeholder="请输入内容" class="search" clearable></el-input>
-              <el-button icon="el-icon-search"></el-button>
+              <el-input v-model="inputVal" type="input" placeholder="探索稀土掘金" class="search" clearable></el-input>
+                <el-button  type="primary" :icon="searchIcon"  class="search"/>
             </li>
             <li><el-button type="primary" plain>创作者中心</el-button></li>
             <li class="flex_center">
@@ -30,23 +30,33 @@
               </div>
               <div class="vip">会员</div>
             </li>
+            <li>
+              <div class="avatar">
+                <el-avatar :icon="userFill"/>
+              </div>
+            </li>
           </ul>
         </div>
-      </div>
-    </div>
-    <div class="top2">
-      <div class="tab2">
       </div>
     </div>
   </div>
 </template>
 
 <script>
+
+import {UserFilled,Search} from '@element-plus/icons-vue'
+import {ref} from "vue";
+
+const input = ref('')
+
 export default {
   name: "headPart",
   data() {
     return {
-      activeIndex: '1'
+      activeIndex: '1',
+      userFill: UserFilled,
+      searchIcon :Search,
+      inputVal : input,
     };
   },
   methods: {
@@ -64,14 +74,10 @@ export default {
 .box{
   width: 100%;
   margin: 0 auto;
+  position: fixed;
+  background-color: white;
 }
-.top2{
-  width: 100%;
-}
-.tab2{
-  width: 60rem;
-  margin: 0 auto;
-}
+
 .top_left{
   flex: 4;
 }
@@ -84,6 +90,8 @@ export default {
 .top{
   justify-content: center;
   border-bottom:solid 1px #e6e6e6;
+  margin-top: 0;
+
 }
 .flex_center{
   align-items: center;
@@ -98,4 +106,21 @@ export default {
 el-menu{
   border-bottom: none;
 }
+el-input{
+  border: 3em;
+  margin: 2em;
+}
+.vip{
+  color: rgb(81,87,103);
+  font-size: 10px;
+  margin-left: 1em;
+  margin-right: 0.5em;
+}
+.search{
+  /*background-color: rgb(242,243,245);*/
+}
+.box{
+  border: none;
+}
+
 </style>

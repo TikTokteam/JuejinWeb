@@ -1,40 +1,46 @@
 <template>
-  <el-header>
-    <head-part></head-part>
+  <el-header class="head">
+  <head-part></head-part>
   </el-header>
-
-  <el-main>
-    <article-list></article-list>
-  </el-main>
-
-  <el-aside>
-    <recent-event></recent-event>
-  </el-aside>
-
-
-  <div>
+  <div class="page">
+    <el-main class="main">
+      <article-reader></article-reader>
+    </el-main>
+    <!--因为element的<el-aside>元素只能放在页面左边，所以我们这里就不用那个了-->
+      <recent-event></recent-event>
   </div>
+
 </template>
 
 <script>
 
-import articleList from "@/components/reader/atricleList";
+
 import RecentEvent from "@/components/eventPart/recentEvent";
 import headPart from "@/components/head/headPart";
+import ArticleReader from "@/components/theArticles/articleReader";
 
 
 export default {
   name: 'App',
   components: {
+    ArticleReader,
     headPart,
     RecentEvent,
-    articleList,
   }
 }
 </script>
 
 <style>
-head-part{
+.head{
   position: fixed;
+  top: 0;
+
+}
+.page{
+  display: flex;
+  flex-direction: row;
+}
+.main{
+  margin-top: 4em;
 }
 </style>
