@@ -1,8 +1,8 @@
 <template>
   <div class='whole'>
     <div class="buttons">
-      <el-button :icon="commentButton" circle size="large" class="aButton" @click="changeIcon"/>
-      <el-button :icon="starButton" circle size="large" class="aButton"/>
+      <el-button :icon="commentButton" circle size="large" class="aButton"/>
+      <el-button :icon="starButton" circle size="large" class="aButton" @click='changeIcon()'/>
       <el-button :icon="shareButton" circle  size="large" class="aButton"/>
     </div>
     <el-card class="container" shadow="never">
@@ -16,9 +16,10 @@
 
 <script>
 
-import {Star,ChatDotRound ,Share} from "@element-plus/icons-vue";
+import {Star,ChatDotRound ,Share,StarFilled} from "@element-plus/icons-vue";
 
 export default {
+
   name: "articleReader",
   data(){
     return {
@@ -29,8 +30,10 @@ export default {
     };
   },
   methods:{
-    changeIcon( ){
-
+    changeIcon(){
+      alert(Star);
+      alert(this.starButton ===Star);
+      alert(this.starButton === StarFilled);
     }
   }
 };

@@ -4,7 +4,6 @@
   </el-header>
   <div class="page">
     <el-main class="main">
-      <article-reader></article-reader>
 
     </el-main>
     <el-aside>
@@ -20,13 +19,13 @@
 
 import RecentEvent from "@/components/eventPart/recentEvent";
 import headPart from "@/components/head/headPart";
-import ArticleReader from "@/components/theArticles/articleReader";
+
 
 
 export default {
   name: 'App',
   components: {
-    ArticleReader,
+
     headPart,
     RecentEvent,
   }
