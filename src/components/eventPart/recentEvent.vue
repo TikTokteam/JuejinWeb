@@ -1,50 +1,47 @@
 <template>
-<ul>
-  <li>
-    <el-card class="sign" shadow="never">
-      <el-icon>
-      </el-icon>
-    </el-card>
-  </li>
-  <li>
-      <img src="../../assets/evwnt3.webp" alt="event3"/>
-  </li>
-  <li>
-    <img src="../../assets/event1.webp" alt="event1"/>
-  </li>
-  <li>
-    <img src="../../assets/event2.webp" alt="event2"/>
-  </li>
-</ul>
+  <div>
+    <ul>
+      <li>
+        <el-card class="sign" shadow="never">
+          <el-icon> </el-icon>
+        </el-card>
+      </li>
+      <li>
+        <img src="../../assets/evwnt3.webp" alt="event3" />
+      </li>
+      <li>
+        <img src="../../assets/event1.webp" alt="event1" />
+      </li>
+      <li>
+        <img src="../../assets/event2.webp" alt="event2" />
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
-
 export default {
   name: "recentEvent",
-  data(){
-    return{
-
-    }
-  }
-}
+  data() {
+    return {};
+  },
+};
 </script>
 
 <style scoped>
-*{
+* {
   list-style: none;
   left: 0;
 }
-ul{
+ul {
   margin-top: 6em;
 }
 
-img{
+img {
   height: 15em;
   width: 15em;
 }
-.sign{
+.sign {
   width: 15em;
-
 }
 </style>
