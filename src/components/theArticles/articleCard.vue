@@ -3,20 +3,23 @@
   <el-card class="theCard">
     <template #header>
       <div class="card-header">
-        <span class="title">文章标题</span>
+        <span class="title">{{ theTitle }}</span>
       </div>
     </template>
-      <div class="content"> 测试一下文章，一行就可以了</div>
+      <div class="content"> {{ firstLine }}</div>
   </el-card>
 </a>
 </template>
 
 <script>
 export default {
+  props:['articleTitle','articleFirstLine'],
   name: "articleCard",
   data(){
     return{
-    }
+      theTitle : this.articleTitle,
+      firstLine : this.articleFirstLine,
+    };
   }
 }
 </script>
@@ -43,5 +46,6 @@ el-card{
   width: 52em;
   margin-left: 10em;
   margin-right: 3em;
+  margin-bottom: 0.1em;
 }
 </style>

@@ -4,10 +4,12 @@
   </el-header>
   <div class="page">
     <el-main class="main">
-      <article-reader></article-reader>
+
     </el-main>
-    <!--因为element的<el-aside>元素只能放在页面左边，所以我们这里就不用那个了-->
+    <el-aside>
       <recent-event></recent-event>
+    </el-aside>
+
   </div>
 
 </template>
@@ -17,13 +19,13 @@
 
 import RecentEvent from "@/components/eventPart/recentEvent";
 import headPart from "@/components/head/headPart";
-import ArticleReader from "@/components/theArticles/articleReader";
+
 
 
 export default {
   name: 'App',
   components: {
-    ArticleReader,
+
     headPart,
     RecentEvent,
   }
@@ -42,5 +44,6 @@ export default {
 }
 .main{
   margin-top: 4em;
+  flex-direction: row;
 }
 </style>
