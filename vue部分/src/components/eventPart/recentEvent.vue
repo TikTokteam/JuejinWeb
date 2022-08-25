@@ -1,15 +1,6 @@
 <template>
 <ul>
   <li>
-    <el-card class="sign" shadow="never">
-      <el-icon>
-      </el-icon>
-    </el-card>
-  </li>
-  <li>
-      <img src="../../assets/evwnt3.webp" alt="event3"/>
-  </li>
-  <li>
     <img src="../../assets/event1.webp" alt="event1"/>
   </li>
   <li>
@@ -19,14 +10,8 @@
 </template>
 
 <script>
-
 export default {
-  name: "recentEvent",
-  data(){
-    return{
-
-    }
-  }
+  name: "recentEvent"
 }
 </script>
 
@@ -40,11 +25,7 @@ ul{
 }
 
 img{
-  height: 15em;
-  width: 15em;
-}
-.sign{
-  width: 15em;
-
+  height: 18em;
+  width: 18em;
 }
 </style>

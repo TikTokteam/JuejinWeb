@@ -122,5 +122,8 @@ el-input{
 .box{
   border: none;
 }
+.el-menu--horizontal{
+  border-bottom: none;
+}
 
 </style>

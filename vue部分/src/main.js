@@ -6,11 +6,11 @@ import '@kangc/v-md-editor/lib/style/preview.css';
 import githubTheme from '@kangc/v-md-editor/lib/theme/github';
 import '@kangc/v-md-editor/lib/theme/style/github.css'
 import hljs from 'highlight.js'
+import {Search} from '@element-plus/icons-vue'
 import preview from "@kangc/v-md-editor/lib/preview";
 
 preview.use(githubTheme,{
     Hljs:hljs,
 });
 
-createApp(App).use(ElementUI).
-use(preview).mount('#app')
+createApp(App).use(ElementUI).use(preview).use(Search).mount('#app')
