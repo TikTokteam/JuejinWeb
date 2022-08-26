@@ -9,12 +9,13 @@
   },
   "dependencies": {
     "@kangc/v-md-editor": "^2.3.15",
+    "axios": "^0.27.2",
     "core-js": "^3.8.3",
     "element-plus": "^2.2.13",
     "highlight.js": "^11.6.0",
     "prismjs": "^1.28.0",
     "vue": "^3.2.13",
-    "vue-virtual-scroll-list": "^2.3.3",
+    "vuex": "^4.0.2",
     "webpack": "^5.74.0"
   },
   "devDependencies": {
